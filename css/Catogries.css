@@ -1,0 +1,99 @@
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1rem;
+  padding: 1rem 2rem 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures each card has the same height */
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 300px; /* Ensures image takes up the full width */
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+  text-align: center;
+  flex-grow: 1; /* Ensures content takes up available space */
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.product-price {
+  color: #28a745;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.product-buttons button {
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cart {
+  background-color: rgb(192, 231, 101);
+  color: white;
+}
+
+.btn-wishlist {
+  background-color: #51c1f5;
+  color: white;
+}
+
+.cart-message {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  font-size: 1rem;
+}
+
+.btn-cart:hover {
+  background-color: #13cfa3;
+}
+
+.btn-wishlist:hover {
+  background-color: #3129c1;
+}
