@@ -20,3 +20,10 @@ document.querySelectorAll('.multi-slider-container').forEach(container => {
     }
   });
 });
+
+//header
+fetch('Header.html')
+.then(res => res.text())
+.then(data => {
+  document.getElementById('header-placeholder').innerHTML = data;
+});

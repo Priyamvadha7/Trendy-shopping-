@@ -39,3 +39,10 @@ function getCart() {
   }
 
   window.addEventListener('DOMContentLoaded', updateCartCount);
+
+  //header
+  fetch('Header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
