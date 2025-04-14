@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%; /* Adjust the width as necessary */
+  width: 80%; 
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ddd;
@@ -25,10 +25,10 @@
 }
 
 .cart-item {
-  display: grid; /* Change flex to grid */
-  grid-template-columns: 60px 1fr auto; /* Define three columns: image, item info, and remove button */
-  gap: 15px; /* Space between columns */
-  width: 80%; /* Adjust the width as necessary */
+  display: grid; 
+  grid-template-columns: 60px 1fr auto; 
+  gap: 15px; 
+  width: 80%; 
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ddd;
