@@ -25,7 +25,7 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Function to render cart items from localStorage
+  
     function renderCart() {
       const cartContainer = document.getElementById('cart-items');
       const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -33,7 +33,7 @@
       cartContainer.innerHTML = '';
       let total = 0;
 
-      // Render cart items
+     
       if (cart.length === 0) {
         cartContainer.innerHTML = '<p>Your cart is empty.</p>';
       } else {
@@ -53,12 +53,12 @@
       document.getElementById('cart-total').textContent = total;
     }
   
-    // Remove item from cart
+   
     function removeItem(name) {
       const cart = JSON.parse(localStorage.getItem('cart')) || [];
       const updatedCart = cart.filter(item => item.name !== name);
       localStorage.setItem('cart', JSON.stringify(updatedCart));
-      renderCart();  // Re-render the cart after removal
+      renderCart();  
     }
 
     // Function for the 'Proceed to Pay' button
@@ -68,11 +68,10 @@
       alert('Total to pay: ₹' + total);
     }
 
-    // Initial render on page load
     window.addEventListener('DOMContentLoaded', renderCart);
 
     document.getElementById('proceedToPay').addEventListener('click', function () {
-    const totalAmount = calculateTotal(); // your existing total calculation function
+    const totalAmount = calculateTotal(); 
     localStorage.setItem('trendyTotalPrice', totalAmount);
     window.location.href = 'payment.html';
   });
@@ -88,11 +87,20 @@
   }
 
   //header
-  fetch('Header.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
+  fetch('/Project/header.html')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('header-placeholder').innerHTML = data;
+  })
+  .catch(error => {
+    console.error('Error loading header:', error);
+  });
+
   </script>
   
 </body>

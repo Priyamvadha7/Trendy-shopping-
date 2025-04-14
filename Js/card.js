@@ -22,8 +22,16 @@ document.querySelectorAll('.multi-slider-container').forEach(container => {
 });
 
 //header
-fetch('Header.html')
-.then(res => res.text())
-.then(data => {
-  document.getElementById('header-placeholder').innerHTML = data;
-});
+fetch('/Project/header.html')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('header-placeholder').innerHTML = data;
+  })
+  .catch(error => {
+    console.error('Error loading header:', error);
+  });

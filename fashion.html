@@ -168,11 +168,20 @@
   window.addEventListener('DOMContentLoaded', updateCartCount);
 
    //header
-   fetch('Header.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
+   fetch('/Project/header.html')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('header-placeholder').innerHTML = data;
+  })
+  .catch(error => {
+    console.error('Error loading header:', error);
+  });
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
