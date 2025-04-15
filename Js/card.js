@@ -22,7 +22,7 @@ document.querySelectorAll('.multi-slider-container').forEach(container => {
 });
 
 //header
-fetch('Header.html')
+fetch('header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
