@@ -169,7 +169,7 @@
     </div>
 
     <button type="submit" class="pay-button">Pay Now</button>
-    <div class="success-message" id="successMessage">✅ Payment Successful! Thank you for shopping with Trendy.</div>
+    <div class="success-message" id="successMessage">Payment Successful! Thank you for shopping with Trendy.</div>
   </form>
 </div>
 
@@ -210,7 +210,7 @@
   document.getElementById('itemsTotal').textContent = '₹ ' + itemsTotal;
   document.getElementById('totalAmount').textContent = '₹ ' + finalTotal;
 
-  fetch('Header.html')
+  fetch('header.html')
     .then(res => res.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
