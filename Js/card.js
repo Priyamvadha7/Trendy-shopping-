@@ -22,7 +22,7 @@ document.querySelectorAll('.multi-slider-container').forEach(container => {
 });
 
 //header
-fetch('/Project/header.html')
+fetch('header.html')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
