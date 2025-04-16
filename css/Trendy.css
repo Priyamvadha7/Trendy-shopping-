@@ -262,31 +262,31 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .newsletter input[type="email"] {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  .newsletter button {
-    width: 100%;
-    border-radius: 5px;
-  }
-
+  /* Ensure top-row is one line */
   .header-grid {
-    grid-template-columns: auto 1fr 2fr;
-    text-align: center;
-    gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
   }
+
+  .menu-icon, .logo, .search-container {
+    flex: 1;
+    text-align: center;
+  }
+
   .logo img {
-    max-width: 120px;
+    max-width: 100px;
     margin: auto;
   }
 
+  /* Keep nav list below */
   #nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
+    margin-top: 10px;
   }
 
   #nav a {
@@ -294,29 +294,24 @@ footer {
     margin: 5px;
   }
 
+  /* Fashion grid - 2 columns */
+  .fashion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* Slide size tweaks */
   .multi-slide {
     width: 150px;
     height: 200px;
   }
 
-  .multi-prev,
-  .multi-next {
+  .multi-prev, .multi-next {
     display: none;
   }
 
   .carousel img {
     max-height: 250px;
-  }
-  .fashion-grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .multi-slide {
-    width: 120px;
-    height: 160px;
   }
 }
