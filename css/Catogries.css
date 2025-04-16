@@ -97,13 +97,12 @@ h2 {
 .btn-wishlist:hover {
   background-color: #3129c1;
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .product-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr); 
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem 2rem 2rem;
   }
-
   
 }
