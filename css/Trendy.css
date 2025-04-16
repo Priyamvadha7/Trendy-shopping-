@@ -45,13 +45,16 @@ header {
   border: 1px solid #ced4da;
   border-radius: 5px;
 }
-
+#link{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
 .right ol li {
   font-size: 1rem;
 }
 
 .right a {
-  margin-left: 5px;
   color: #212529;
 }
 
@@ -322,6 +325,19 @@ footer {
     border-radius: 5px;
   }
 
+  #link{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .right ol li {
+    font-size: 0.8rem;
+  }
+  
+  .right a:hover {
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
   #nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
