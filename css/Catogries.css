@@ -11,17 +11,7 @@ h2 {
   color: #333;
 }
 
-@media (max-width: 600px) {
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr); 
-    gap: 1rem;
-    padding: 1rem 2rem 2rem;
-  }
-  
 
- 
-}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4,1fr); 
@@ -106,4 +96,14 @@ h2 {
 
 .btn-wishlist:hover {
   background-color: #3129c1;
+}
+@media (max-width: 480px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 1rem;
+    padding: 1rem 2rem 2rem;
+  }
+
+  
 }
