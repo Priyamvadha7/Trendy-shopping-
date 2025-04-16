@@ -168,6 +168,34 @@ header {
   background-color: #dc3545;
   color: white;
 }
+
+.fashion-section {
+  margin: 2rem 0;
+  position: relative;
+}
+
+
+.fashion-overlay-title {
+  position: absolute;
+  top: 170px;
+  z-index: 1;
+  width: 100%;
+  background: #dc3545; 
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.fashion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+}
 .card-img-top {
   aspect-ratio: 4 / 5; 
   object-fit: cover;
@@ -262,46 +290,58 @@ footer {
 }
 
 @media (max-width: 800px) {
-  /* Ensure top-row is one line */
   .header-grid {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 40px 80px 1fr; /* menu | logo | search */
+    gap: 10px;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
   }
 
-  .menu-icon, .logo, .search-container {
-    flex: 1;
-    text-align: center;
+  .menu-icon {
+    font-size: 1.5rem;
+    text-align: left;
   }
 
   .logo img {
-    max-width: 100px;
-    margin: auto;
+    max-width: 70px;
+    height: auto;
   }
 
-  /* Keep nav list below */
+  .search-container input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+
   #nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
   }
 
   #nav a {
-    width: 50px;
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 100%;
   }
 
-  /* Fashion grid - 2 columns */
+  #nav img.user-image {
+    width: 60px;
+    height: 60px;
+  }
+
   .fashion-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-
-  /* Slide size tweaks */
+ 
   .multi-slide {
     width: 150px;
     height: 200px;
@@ -313,5 +353,16 @@ footer {
 
   .carousel img {
     max-height: 250px;
+  }
+
+}
+@media (max-width: 480px) {
+  #nav {
+    grid-template-columns: repeat(4, 1fr); /* 4 per row on very small screens */
+  }
+
+  #nav img.user-image {
+    width: 50px;
+    height: 50px;
   }
 }
