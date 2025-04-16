@@ -302,7 +302,7 @@ footer {
 @media (max-width: 800px) {
   .header-grid {
     display: grid;
-    grid-template-columns: 10px 250px 50px ; 
+    grid-template-columns: 10px 200px 20px ; 
     gap: 10px;
     align-items: center;
     padding: 10px;
@@ -317,7 +317,7 @@ footer {
   }
 
   .search-container input {
-    width: 100%;
+    width: 90%;
     padding: 5px;
     border-radius: 5px;
   }
