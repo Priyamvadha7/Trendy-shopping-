@@ -62,7 +62,9 @@ header {
   font-size: 1.2rem;
   transition: 0.3s;
 }
-
+.right-ph{
+  display: none;
+}
 #nav img.user-image {
   width: 90px;
   height: 90px;
@@ -305,7 +307,7 @@ footer {
 @media (max-width: 800px) {
   .header-grid {
     display: grid;
-    grid-template-columns: 10px 170px 160px ; 
+    grid-template-columns: 10px 170px 120px ; 
     gap: 10px;
     align-items: center;
     padding: 10px;
