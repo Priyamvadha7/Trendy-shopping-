@@ -305,7 +305,7 @@ footer {
 @media (max-width: 800px) {
   .header-grid {
     display: grid;
-    grid-template-columns: 10px 150px 80px ; 
+    grid-template-columns: 10px 150px 100px ; 
     gap: 10px;
     align-items: center;
     padding: 10px;
