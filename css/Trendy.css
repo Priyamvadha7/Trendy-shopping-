@@ -329,15 +329,13 @@ footer {
 
   #link{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .right ol li a{
+  .right i{
     display: none;
   }
-  
-  .right a:hover {
-    font-size: 1rem;
-    transition: 0.3s;
+  .right a{
+    font-size: 10px;
   }
   
   #nav {
