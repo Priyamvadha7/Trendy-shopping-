@@ -331,9 +331,7 @@ footer {
     display: flex;
     justify-content: center;
   }
-  .right i{
-    display: none;
-  }
+
   .right a{
     font-size: 10px;
   }
