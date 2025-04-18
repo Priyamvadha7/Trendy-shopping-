@@ -301,7 +301,7 @@ footer {
 @media (max-width: 800px) {
   .header-grid {
     display: grid;
-    grid-template-columns: 10px 190px 110px ; 
+    grid-template-columns: auto auto auto;
     gap: 10px;
     align-items: center;
     padding: 10px;
@@ -324,7 +324,7 @@ footer {
   #link{
     display: grid;
     grid-template-columns: repeat(4,auto);
-    gap: 5px;
+    gap: 10px;
   }
 
   .right a{
