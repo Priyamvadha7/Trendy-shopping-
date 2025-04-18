@@ -379,6 +379,9 @@ footer {
   .carousel img {
     max-height: 250px;
   }
+  .newsletter input[type="email"] {
+    width: 40%;
+  }
 
 }
 @media (max-width: 480px) {
