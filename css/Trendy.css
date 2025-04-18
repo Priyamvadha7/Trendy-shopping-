@@ -68,7 +68,7 @@ header {
 }
 #nav {
   display: grid;
-  grid-template-columns: repeat(9,auto);
+  grid-template-columns: repeat(8,auto);
   gap: 10px;
   padding: 10px;
   text-align: center;
