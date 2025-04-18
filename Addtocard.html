@@ -61,7 +61,7 @@
       renderCart();  
     }
 
-    // Function for the 'Proceed to Pay' button
+    //Proceed to Pay
     function proceedToPay() {
       const cart = JSON.parse(localStorage.getItem('cart')) || [];
       const total = cart.reduce((sum, item) => sum + item.price, 0);
@@ -77,7 +77,7 @@
   });
 
   function calculateTotal() {
-    // Example total price calc (you might already have this logic)
+  
     let total = 0;
     let cart = JSON.parse(localStorage.getItem('cartItems')) || [];
     cart.forEach(item => {
