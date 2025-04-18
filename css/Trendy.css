@@ -54,17 +54,11 @@ header {
   font-size: 1rem;
 }
 
-.right a {
-  color: #212529;
-}
-
 .right a:hover {
   font-size: 1.2rem;
   transition: 0.3s;
 }
-.right-ph{
-  display: none;
-}
+
 #nav img.user-image {
   width: 90px;
   height: 90px;
@@ -330,6 +324,7 @@ footer {
   #link{
     display: grid;
     grid-template-columns: repeat(4,auto);
+    gap: 5px;
   }
 
   .right a{
