@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="asset/icon.PNG" />
   <title>Payment | Trendy Shopping</title>
   <style>
     body {
@@ -89,6 +90,8 @@
       border-radius: 10px;
       cursor: pointer;
       margin-top: 20px;
+      text-decoration: none;
+      text-align: center;
     }
 
     .pay-button:hover {
@@ -156,7 +159,7 @@
     <div class="section summary">
       <div class="summary-item">
         <span>Items Total</span>
-        <span>₹ 0</span>
+        <span id="cart-total">₹ 0</span>
       </div>
       <div class="summary-item">
         <span>Shipping</span>
@@ -164,17 +167,20 @@
       </div>
       <div class="summary-total">
         <span>Total</span>
-        <span>₹ 0</span>
+        <span id="totalAmount">₹ 0</span>
       </div>
     </div>
 
-    <button type="submit" class="pay-button">Pay Now</button>
-    <div class="success-message" id="successMessage">Payment Successful! Thank you for shopping with Trendy.</div>
+    <a href="Order.html" class="pay-button">Pay Now</a>
+    <!-- <div class="success-message" id="successMessage">Payment Successful! Thank you for shopping with Trendy.</div> -->
   </form>
 </div>
 
 
 <script>
+  const total = localStorage.getItem('trendyTotalPrice') || 0;
+  document.getElementById('totalAmount').textContent = `₹${total}`;
+
   const paymentForm = document.getElementById('paymentForm');
   const successMessage = document.getElementById('successMessage');
 
