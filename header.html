@@ -43,13 +43,13 @@
           </div>
           <div class="right text-end">
             <ol class="list-unstyled" id="link">
-              <li><a href="index.html" title="home"><i class="fa-solid fa-house fa-lg custom-icon"></i></a></li>
-              <li> <a href="Login.html" title="login"><i class="fa-solid fa-user fa-lg custom-icon"></i></a></li>
-              <li> <a href="wishlist.html" title="wishlist"><i class="fa-solid fa-heart fa-lg custom-icon"></i></a></li>
+              <li><a href="index.html" title="home"><i class="fa-solid fa-house fa-lg custom-icon" ></i></a></li>
+              <li> <a href="Login.html" title="login"><i class="fa-solid fa-user fa-lg custom-icon" ></i></a></li>
+              <li> <a href="wishlist.html" title="wishlist"><i class="fa-solid fa-heart fa-lg custom-icon" ></i></a></li>
               <li>
                 <a href="Addtocard.html" id="cart-link" title="Addtocard">
                   <div class="position-relative d-inline-block">
-                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <i class="fa-solid fa-cart-shopping fa-lg " style="color: darkslategray;" ></i>
                     <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 10px; padding: 2px 5px;">
                       0
                       <span class="visually-hidden">unread messages</span>
@@ -69,15 +69,27 @@
 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
 </div>
 <div class="offcanvas-body">
-<div class="dropdown mt-3">
-<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-Section
-</button>
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="Login.html">Login</a></li>
-<li><a class="dropdown-item" href="#">Shopping</a></li>
-<li><a class="dropdown-item" href="Query.html">Query</a></li>
+<h5 class="mb-3">Explore Categories</h5>
+<ul class="list-group">
+  <li class="list-group-item"><a href="Grocery.html">Grocery</a></li>
+  <li class="list-group-item"><a href="fashion.html">Fashion</a></li>
+  <li class="list-group-item"><a href="beauty.html">Beauty</a></li>
+  <li class="list-group-item"><a href="gadgets.html">Gadgets</a></li>
+  <li class="list-group-item"><a href="furniture.html">Furniture</a></li>
+  <li class="list-group-item"><a href="appliances.html">Appliances</a></li>
+  <li class="list-group-item"><a href="sports.html">Sports</a></li>
+  <li class="list-group-item"><a href="home.html">Home</a></li>
 </ul>
+
+<hr class="my-4" />
+
+<h5 class="mb-3">Quick Access</h5>
+<div class="d-grid gap-2">
+  <a href="wishlist.html" class="btn btn-outline-danger"><i class="fa fa-heart me-2"></i> Wishlist</a>
+  <a href="Addtocard.html" class="btn btn-outline-dark"><i class="fa fa-shopping-cart me-2"></i> View Cart</a>
+  <a href="Login.html" class="btn btn-outline-primary"><i class="fa fa-user me-2"></i> Login</a>
+  <a href="Query.html" class="btn btn-outline-success"><i class="fa fa-question-circle me-2"></i> Help / Query</a>
+</div>
 </div>
 </div>
 </div>
